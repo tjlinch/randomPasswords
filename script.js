@@ -54,13 +54,15 @@ function generatePassword() {
       if (
         userSpecial && userNumeric && userUppercase && userLowercase) {
           // console.log("all characters");
+          // randomPassword = []
           for (var i = 0; i < charNumber; i++) {
             var randomArray = arrays[Math.floor(Math.random () * arrays.length)]; 
             var randomCharacter = randomArray[Math.floor(Math.random () * randomArray.length)];
-            // console.log(randomCharacter)
-            return randomCharacter;
+            console.log(randomCharacter)
+            // return randomCharacter;
           }
-        // return password;
+          // console.log(randomCharacter)
+        // return randomCharacter;
 
       } 
       
