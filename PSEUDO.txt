@@ -1,0 +1,21 @@
+Store all available characters in arrays
+
+create a function for generatePassword
+
+prompt for how many characters
+    if else statement to keep the number of characters between 8 and 128
+    return to prompt 
+
+confirm for special characters
+confirm for numeric characters
+confirm for uppercase
+confirm for lowercase
+    at least one type of character must be selected
+
+generate password with user selections
+    access characters by array
+    randomly generate value for array index
+    only using the selected arrays from the user confirms
+    use a for loop to repeat action for the user selected number of characters
+    "return password;"
+

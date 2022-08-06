@@ -29,12 +29,10 @@ var lowercase = [
 var arrays = [
   special, numeric, uppercase, lowercase
 ]
-// console.log(arrays)
-// console.log(special, numeric, uppercase, lowercase)
 
-
+//responsible for the entire functionality of the generate password button
 function generatePassword() {
-  
+  //prompts, alerts, and confirms to capture user input
   var charNumber = prompt("How many characters would you like to use in your password?");
     
   if (charNumber < 8){
@@ -53,8 +51,7 @@ function generatePassword() {
       var newArray = []
 
       // select which characters to use, and run a function that only uses the selected characters. At least one type of character must be selected.
-      if (
-        userSpecial && userNumeric && userUppercase && userLowercase) {
+      if (userSpecial && userNumeric && userUppercase && userLowercase) {
           // generates password when all types of characters are selected.
           for (var i = 0; i < charNumber; i++) {
             var randomArray = arrays[Math.floor(Math.random () * arrays.length)]; 
@@ -213,7 +210,6 @@ function generatePassword() {
         }
         userPassword = newArray.join("");
         return userPassword;
-        // console.log("uppercase, numeric, and lowercase")
       }
       
       else {
